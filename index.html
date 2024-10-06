@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Tracker Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calorie Tracker</h1>
+        
+        <div class="card">
+            <h2>Weekly Calorie Intake</h2>
+            <canvas id="calorieChart"></canvas>
+        </div>
+        
+        <div class="card">
+            <h2>Add Food</h2>
+            <div class="search-container">
+                <input type="text" id="foodSearch" placeholder="Search food...">
+                <button class="search-btn">Search</button>
+            </div>
+            <button id="takePhotoBtn" class="full-width-btn">Take Photo of Meal</button>
+            <img id="capturedImage" alt="Captured meal" src="">
+        </div>
+        
+        <button class="full-width-btn">Add Custom Food</button>
+    </div>
+</body>
+</html>
